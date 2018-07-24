@@ -1,0 +1,64 @@
+﻿:root {
+    /* ButtonDefault */
+    --vButtonDefaultColor_Hover: var(--cButtonDefaultColor);
+    /* Content */
+    --vContentMargin: 0 2%;
+    --vContentWidth: 96%;
+    /* ContentBlock */
+    --vContentBlockWidth_S100M050: 100%;
+    /* ContentBlockColumn */
+    --vContentBlockColumnMargin: 10px 0 0;
+    --vContentBlockColumnPadding: 0 10px;
+    /* ContentBlockColumnRow */
+    --vContentBlockColumnRowBorderRadius_Hover: initial;
+    --vContentBlockColumnRowBoxShadow_Hover: initial;
+    --vContentBlockColumnRowPadding: 2px 5px 8px;
+    /* ContentBlockColumnSpacer */
+    --vContentBlockColumnSpacerPadding: 5px;
+    /* FooterRowCell */
+    --vFooterRowCellPadding: 0 5%;
+    /* Header */
+    --vHeaderLeft: initial;
+    --vHeaderPadding: var(--cPadding_Default);
+    --vHeaderPosition: initial;
+    --vHeaderTop: initial;
+    /* HeaderNavigationContent */
+    --vHeaderNavigationContentMargin: var(--cMargin_Default);
+    --vHeaderNavigationContentPadding: var(--cPadding_Default);
+    /* HeaderNavigationContentBlock */
+    --vHeaderNavigationContentBlockPadding: var(--cPadding_Default);
+    /* HeaderNavigationContentBlockDropdownButton */
+    --vHeaderNavigationContentBlockDropdownButtonBackgroundColor_Hover: var(--cHeaderBackgroundColor);
+    --vHeaderNavigationContentBlockDropdownButtonColor_Hover: var(--cHeaderColor);
+    --vHeaderNavigationContentBlockDropdownButtonPadding: 12px 15px 18px;
+    /* HeaderNavigationContentBlockDropdownContent */
+    --vHeaderNavigationContentBlockDropdownContentBoxShadow: initial;
+    --vHeaderNavigationContentBlockDropdownContentDisplay_Hover: none;
+    --vHeaderNavigationContentBlockDropdownContentDisplay_Show: block;
+    --vHeaderNavigationContentBlockDropdownContentPosition: initial;
+    /* HeaderNavigationContentBlockDropdownContentLink */
+    --vHeaderNavigationContentBlockDropdownContentLinkBackgroundColor_Hover: var(--cHeaderNavigationContentBlockDropdownContentBackgroundColor);
+    --vHeaderNavigationContentBlockDropdownContentLinkColor_Hover: var(--cHeaderColor);
+    /* HeaderNavigationContentBlockItem */
+    --vHeaderNavigationContentBlockItemDisplay_Hide: none;
+    --vHeaderNavigationContentBlockItemFloat: initial;
+    --vHeaderNavigationContentBlockItemMinHeight: 51px;
+    /* HeaderNavigationContentBlockItemLink */
+    --vHeaderNavigationContentBlockItemLinkBackgroundColor_Hover: var(--cHeaderBackgroundColor);
+    --vHeaderNavigationContentBlockItemLinkColor_Hover: var(--cHeaderColor);
+    --vHeaderNavigationContentBlockItemLinkPadding: 12px 15px 18px;
+    --vHeaderNavigationContentBlockItemLinkTransitionDuration: var(--cTransitionDuration_Short);
+    /* HeaderNavigationContentButton */
+    --vHeaderNavigationContentButtonDisplay: initial;
+    /* HeaderTitle */
+    --vHeaderTitleMargin: var(--cMargin_Default);
+    --vHeaderTitlePadding: var(--cPadding_Default);
+    /* HeaderTitleContent */
+    --vHeaderTitleContentColor: var(--cHeaderBackgroundColor);
+    --vHeaderTitleContentFontSize: 0;
+    --vHeaderTitleContentPadding: var(--cPadding_Default);
+    --vHeaderTitleContentWidth: 0;
+    /* Spacer */
+    --vSpacerDisplay: none;
+    --vSpacerHeight: initial;
+}

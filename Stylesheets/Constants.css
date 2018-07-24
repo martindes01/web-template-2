@@ -1,0 +1,139 @@
+﻿:root {
+    /* SHARED */
+    /* Common */
+    --cBodyBackgroundColor: #EFEFEF;
+    --cBoxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    --cBoxShadow_Hover: 0 3px 5px 1px rgba(0, 0, 0, 0.1), 0 3px 7px 1px rgba(0, 0, 0, 0.2);
+    --cBoxShadowInset: inset;
+    --cCursor_Default: default;
+    --cCursor_Link: pointer;
+    --cFontFamily_Default: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --cLeftFloat: left;
+    --cMargin_Default: 0;
+    --cOverflowX_Default: hidden;
+    --cPadding_Default: 0;
+    --cRightFloat: right;
+    --cTextDecoration_Default: none;
+    --cTransitionDuration_Short: 0.2s;
+    --cTransitionDuration_Long: 0.5s;
+    --cWrapOverflowWrap: break-word;
+    --cWrapWhiteSpace: normal;
+    /* Button */
+    --cButtonColor: inherit;
+    --cButtonCursor_Link: pointer;
+    --cButtonFontSize_H1: 36px;
+    --cButtonFontSize_H2: 30px;
+    --cButtonFontSize_H3: 24px;
+    --cButtonHeight_H1: 32px; /* 36px */
+    --cButtonHeight_H2: 26px; /* 30px */
+    --cButtonHeight_H3: 22px; /* 24px */
+    --cButtonWidth_H1: 36px;
+    --cButtonWidth_H2: 30px;
+    --cButtonWidth_H3: 24px;
+    /* Content */
+    --cContentBorderRadius: 4px;
+    --cContentColor: #000000;
+    --cContentColor_Inactive: #7F7F7F;
+    /* ContentBlockColumn */
+    --cContentBlockColumnBackgroundColor: #FFFFFF;
+    /* Footer */
+    --cFooterBackgroundColor: #EFEFEF;
+    --cFooterColor: #000000;
+    --cFooterPadding: 0 0 10px;
+    --cFooterTextAlign: center;
+    /* Header */
+    --cHeaderBackgroundColor: #EFEFEF;
+    --cHeaderBackgroundColor_Active: #DFDFDF;
+    --cHeaderColor: #000000;
+    --cHeaderColor_Active: #000000;
+    --cHeaderTextAlign: left;
+    /* SocialMedia */
+    --cSocialMediaColor_Facebook: #3B579D;
+    --cSocialMediaColor_FacebookLike: #3B579D; /* #4080FF */
+    --cSocialMediaColor_GooglePlus: #DB4437;
+    --cSocialMediaColor_Twitter: #1DA1F3;
+    --cSocialMediaColor_YouTube: #FF0000;
+    /* SPECIFIC */
+    /* ButtonDefault */
+    --cButtonDefaultColor: #BFBFBF;
+    /* Content */
+    --cContentListStyleType: none;
+    /* ContentBlock */
+    --cContentBlockFloat: left;
+    --cContentBlockWidth_S100M100: 100%;
+    /* ContentBlockColumn */
+    --cContentBlockColumnDisplay: block;
+    /* ContentBlockColumnRow */
+    --cContentBlockColumnRowBorderTop_NotFirstChild: 1px solid #DFDFDF;
+    /* ContentBlockColumnRowTable */
+    --cContentBlockColumnRowTableDisplay: table;
+    --cContentBlockColumnRowTableVerticalAlign: middle;
+    --cContentBlockColumnRowTableWidth: 100%;
+    /* ContentBlockColumnRowTable */
+    --cContentBlockColumnRowTableDisplay: table;
+    /* ContentBlockColumnRowTableCell */
+    --cContentBlockColumnRowTableCellDisplay: table-cell;
+    /* ContentBlockColumnScroll */
+    --cContentBlockColumnScrollBorder: 1px solid rgba(0, 0, 0, 0.1);
+    --cContentBlockColumnScrollPadding_Horizontal: 10px 0;
+    --cContentBlockColumnScrollPosition: relative;
+    --cContentBlockColumnScrollOverflowX_Horizontal: scroll;
+    --cContentBlockColumnScrollWhiteSpace_Horizontal: nowrap;
+    /* ContentBlockColumnScrollTable */
+    --cContentBlockColumnScrollTableBorderCollapse: separate;
+    --cContentBlockColumnScrollTableBorderSpacing_Horizontal: 10px 0;
+    /* ContentBlockColumnScrollTableCell */
+    --cContentBlockColumnScrollTableCellDisplay: table-cell;
+    --cContentBlockColumnScrollTableCellHeight: 100%;
+    --cContentBlockColumnScrollTableCellMaxWidth: 240px;
+    --cContentBlockColumnScrollTableCellMinWidth: 240px;
+    --cContentBlockColumnScrollTableCellPadding: 0 15px 6px;
+    /* Footer */
+    --cFooterWidth: 100%;
+    /* FooterRowCell */
+    --cFooterRowCellDisplay: inline-block;
+    --cFooterRowCellVerticalAlign: top;
+    /* Header */
+    --cHeaderWidth: 100%;
+    --cHeaderZIndex: 3;
+    /* HeaderNavigationContentBlock */
+    --cHeaderNavigationContentBlockListStyleType: none;
+    /* HeaderNavigationContentBlockDropdown */
+    --cHeaderNavigationContentBlockDropdownPosition: relative;
+    /* HeaderNavigationContentBlockDropdownButton */
+    --cHeaderNavigationContentBlockDropdownButtonDisplay: block;
+    /* HeaderNavigationContentBlockDropdownContent */
+    --cHeaderNavigationContentBlockDropdownContentBackgroundColor: #FFFFFF;
+    --cHeaderNavigationContentBlockDropdownContentBackgroundColor_Active: #EFEFEF;
+    --cHeaderNavigationContentBlockDropdownContentDisplay: none;
+    --cHeaderNavigationContentBlockDropdownContentOverflow: auto;
+    --cHeaderNavigationContentBlockDropdownContentWhitespace: nowrap;
+    /* HeaderNavigationContentBlockDropdownContentLink */
+    --cHeaderNavigationContentBlockDropdownContentLinkBackgroundColor: transparent;
+    --cHeaderNavigationContentBlockDropdownContentLinkDisplay: block;
+    --cHeaderNavigationContentBlockDropdownContentLinkPadding: 7px 30px 13px;
+    /* HeaderNavigationContentBlockDropdownContentSeparator */
+    --cHeaderNavigationContentBlockDropdownContentSeparatorBorderStyle: solid;
+    --cHeaderNavigationContentBlockDropdownContentSeparatorColor: #DFDFDF;
+    /* HeaderNavigationContentBlockItem */
+    --cHeaderNavigationContentBlockItemDisplay_Show: initial;
+    /* HeaderNavigationContentBlockItemLink */
+    --cHeaderNavigationContentBlockItemLinkDisplay: block;
+    /* HeaderNavigationContentButton */
+    --cHeaderNavigationContentButtonCursor: pointer;
+    --cHeaderNavigationContentButtonPadding: 11px 16px 12px;
+    --cHeaderNavigationContentButtonPosition: absolute;
+    --cHeaderNavigationContentButtonRight: 2px;
+    --cHeaderNavigationContentButtonTop: 4px;
+    --cHeaderNavigationContentButtonWidth: 28px;
+    /* HeaderNavigationContentButtonBar */
+    --cHeaderNavigationContentButtonBarMargin: 4px 0;
+    --cHeaderNavigationContentButtonBarHeight: 4px;
+    --cHeaderNavigationContentButtonBarWidth: 28px;
+    /* HeaderNavigationContentButtonBar1 */
+    --cHeaderNavigationContentButtonBar1Transform: translate(0px, 8px) rotate(45deg);
+    /* HeaderNavigationContentButtonBar2 */
+    --cHeaderNavigationContentButtonBar2Opacity: 0.0;
+    /* HeaderNavigationContentButtonBar3 */
+    --cHeaderNavigationContentButtonBar3Transform: translate(0px, -8px) rotate(-45deg);
+}

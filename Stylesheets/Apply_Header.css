@@ -1,0 +1,183 @@
+﻿.Header {
+    margin: var(--cMargin_Default);
+    padding: var(--vHeaderPadding);
+    position: var(--vHeaderPosition);
+    left: var(--vHeaderLeft);
+    top: var(--vHeaderTop);
+    width: var(--cHeaderWidth);
+    z-index: var(--cHeaderZIndex);
+    background-color: var(--cHeaderBackgroundColor);
+    box-shadow: var(--cBoxShadow);
+    text-align: var(--cHeaderTextAlign);
+}
+
+.HeaderNavigationContent {
+    margin: var(--vHeaderNavigationContentMargin);
+    padding: var(--vHeaderNavigationContentPadding);
+}
+
+.HeaderNavigationContentBlock {
+    list-style-type: var(--cHeaderNavigationContentBlockListStyleType);
+    margin: var(--cMargin_Default);
+    padding: var(--vHeaderNavigationContentBlockPadding);
+}
+
+.HeaderNavigationContentBlock_Show .HeaderNavigationContentBlockItem_Hide {
+    display: var(--cHeaderNavigationContentBlockItemDisplay_Show);
+}
+
+.HeaderNavigationContentBlockDropdown {
+    position: var(--cHeaderNavigationContentBlockDropdownPosition);
+}
+
+.HeaderNavigationContentBlockDropdown:hover .HeaderNavigationContentBlockDropdownButton {
+    transition-duration: var(--cTransitionDuration_Short);
+    background-color: var(--vHeaderNavigationContentBlockDropdownButtonBackgroundColor_Hover);
+    color: var(--vHeaderNavigationContentBlockDropdownButtonColor_Hover);
+}
+
+.HeaderNavigationContentBlockDropdown:hover .HeaderNavigationContentBlockDropdownContent {
+    display: var(--vHeaderNavigationContentBlockDropdownContentDisplay_Hover);
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+    position: var(--vHeaderNavigationContentBlockDropdownContentPosition);
+    overflow: var(--cHeaderNavigationContentBlockDropdownContentOverflow);
+    white-space: var(--cHeaderNavigationContentBlockDropdownContentWhitespace);
+    background-color: var(--cHeaderNavigationContentBlockDropdownContentBackgroundColor);
+    box-shadow: var(--vHeaderNavigationContentBlockDropdownContentBoxShadow);
+}
+
+.HeaderNavigationContentBlockDropdownButton {
+    transition-duration: var(--cTransitionDuration_Long);
+    cursor: var(--cCursor_Default);
+    display: var(--cHeaderNavigationContentBlockDropdownButtonDisplay);
+    margin: var(--cMargin_Default);
+    padding: var(--vHeaderNavigationContentBlockDropdownButtonPadding);
+    background-color: var(--cHeaderBackgroundColor);
+    color: var(--cHeaderColor);
+}
+
+.HeaderNavigationContentBlockDropdownButton:hover {
+    transition-duration: var(--cTransitionDuration_Short);
+    background-color: var(--vHeaderNavigationContentBlockDropdownButtonBackgroundColor_Hover);
+    color: var(--vHeaderNavigationContentBlockDropdownButtonColor_Hover);
+}
+
+.HeaderNavigationContentBlockDropdownContent {
+    display: var(--cHeaderNavigationContentBlockDropdownContentDisplay);
+}
+
+.HeaderNavigationContentBlockDropdownContent_Show {
+    display: var(--vHeaderNavigationContentBlockDropdownContentDisplay_Show);
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+    position: var(--vHeaderNavigationContentBlockDropdownContentPosition);
+    overflow: var(--cHeaderNavigationContentBlockDropdownContentOverflow);
+    white-space: var(--cHeaderNavigationContentBlockDropdownContentWhitespace);
+    background-color: var(--cHeaderNavigationContentBlockDropdownContentBackgroundColor);
+    box-shadow: var(--vHeaderNavigationContentBlockDropdownContentBoxShadow);
+}
+
+.HeaderNavigationContentBlockDropdownContentLink {
+    transition-duration: var(--cTransitionDuration_Short);
+    display: var(--cHeaderNavigationContentBlockDropdownContentLinkDisplay);
+    margin: var(--cMargin_Default);
+    padding: var(--cHeaderNavigationContentBlockDropdownContentLinkPadding);
+    background-color: var(--cHeaderNavigationContentBlockDropdownContentLinkBackgroundColor);
+    color: var(--cHeaderColor);
+    text-decoration: var(--cTextDecoration_Default);
+}
+
+.HeaderNavigationContentBlockDropdownContentLink:hover {
+    transition-duration: var(--cTransitionDuration_Short);
+    background-color: var(--vHeaderNavigationContentBlockDropdownContentLinkBackgroundColor_Hover);
+    color: var(--vHeaderNavigationContentBlockDropdownContentLinkColor_Hover);
+}
+
+.HeaderNavigationContentBlockDropdownContentSeparator {
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+    color: var(--cHeaderNavigationContentBlockDropdownContentSeparatorColor);
+    border-style: var(--cHeaderNavigationContentBlockDropdownContentSeparatorBorderStyle);
+}
+
+.HeaderNavigationContentBlockItem {
+    float: var(--vHeaderNavigationContentBlockItemFloat);
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+    min-height: var(--vHeaderNavigationContentBlockItemMinHeight);
+}
+
+.HeaderNavigationContentBlockItem_Hide {
+    display: var(--vHeaderNavigationContentBlockItemDisplay_Hide);
+}
+
+.HeaderNavigationContentBlockItemLink {
+    transition-duration: var(--vHeaderNavigationContentBlockItemLinkTransitionDuration);
+    display: var(--cHeaderNavigationContentBlockItemLinkDisplay);
+    margin: var(--cMargin_Default);
+    padding: var(--vHeaderNavigationContentBlockItemLinkPadding);
+    background-color: var(--cHeaderBackgroundColor);
+    color: var(--cHeaderColor);
+    text-decoration: var(--cTextDecoration_Default);
+}
+
+.HeaderNavigationContentBlockItemLink:hover {
+    transition-duration: var(--cTransitionDuration_Short);
+    background-color: var(--vHeaderNavigationContentBlockItemLinkBackgroundColor_Hover);
+    color: var(--vHeaderNavigationContentBlockItemLinkColor_Hover);
+}
+
+.HeaderNavigationContentButton {
+    display: var(--vHeaderNavigationContentButtonDisplay);
+    cursor: var(--cHeaderNavigationContentButtonCursor);
+    margin: var(--cMargin_Default);
+    padding: var(--cHeaderNavigationContentButtonPadding);
+    position: var(--cHeaderNavigationContentButtonPosition);
+    right: var(--cHeaderNavigationContentButtonRight);
+    top: var(--cHeaderNavigationContentButtonTop);
+    width: var(--cHeaderNavigationContentButtonWidth);
+    background-color: var(--cHeaderBackgroundColor);
+}
+
+.HeaderNavigationContentButton_Close .HeaderNavigationContentButtonBar1 {
+    transform: var(--cHeaderNavigationContentButtonBar1Transform);
+}
+
+.HeaderNavigationContentButton_Close .HeaderNavigationContentButtonBar2 {
+    opacity: var(--cHeaderNavigationContentButtonBar2Opacity);
+}
+
+.HeaderNavigationContentButton_Close .HeaderNavigationContentButtonBar3 {
+    transform: var(--cHeaderNavigationContentButtonBar3Transform);
+}
+
+.HeaderNavigationContentButtonBar {
+    transition-duration: var(--cTransitionDuration_Short);
+    margin: var(--cHeaderNavigationContentButtonBarMargin);
+    padding: var(--cPadding_Default);
+    height: var(--cHeaderNavigationContentButtonBarHeight);
+    width: var(--cHeaderNavigationContentButtonBarWidth);
+    background-color: var(--cHeaderColor);
+}
+
+.HeaderTitle {
+    margin: var(--vHeaderTitleMargin);
+    padding: var(--vHeaderTitlePadding);
+}
+
+.HeaderTitleContent {
+    cursor: var(--cCursor_Default);
+    margin: var(--cMargin_Default);
+    padding: var(--vHeaderTitleContentPadding);
+    width: var(--vHeaderTitleContentWidth);
+    color: var(--vHeaderTitleContentColor);
+    font-size: var(--vHeaderTitleContentFontSize);
+}
+
+.Spacer {
+    display: var(--vSpacerDisplay);
+    margin: var(--cMargin_Default);
+    padding: var(--cHeaderNavigationContentButtonPadding);
+    height: var(--vSpacerHeight);
+}

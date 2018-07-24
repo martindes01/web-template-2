@@ -1,0 +1,110 @@
+﻿.Content {
+    list-style-type: var(--cContentListStyleType);
+    margin: var(--vContentMargin);
+    padding: var(--cPadding_Default);
+    width: var(--vContentWidth);
+    color: var(--cContentColor);
+}
+
+.Content_Inactive {
+    color: var(--cContentColor_Inactive);
+}
+
+.ContentBlock {
+    float: var(--cContentBlockFloat);
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+}
+
+.ContentBlock_S100M100 {
+    width: var(--cContentBlockWidth_S100M100);
+}
+
+.ContentBlock_S100M050 {
+    width: var(--vContentBlockWidth_S100M050);
+}
+
+.ContentBlockColumn {
+    display: var(--cContentBlockColumnDisplay);
+    margin: var(--vContentBlockColumnMargin);
+    padding: var(--vContentBlockColumnPadding);
+    background-color: var(--cContentBlockColumnBackgroundColor);
+    border-radius: var(--cContentBorderRadius);
+    box-shadow: var(--cBoxShadow);
+}
+
+.ContentBlockColumnRow {
+    padding: var(--vContentBlockColumnRowPadding);
+}
+
+.ContentBlockColumnRow:not(:first-child) {
+    border-top: var(--cContentBlockColumnRowBorderTop_NotFirstChild);
+}
+
+.ContentBlockColumnRow_Link {
+    transition-duration: var(--cTransitionDuration_Short);
+}
+
+.ContentBlockColumnRow_Link:hover {
+    border-radius: var(--vContentBlockColumnRowBorderRadius_Hover);
+    box-shadow: var(--vContentBlockColumnRowBoxShadow_Hover);
+}
+
+.ContentBlockColumnScroll {
+    position: var(--cContentBlockColumnScrollPosition);
+    background-color: var(--cBodyBackgroundColor);
+    border-left: var(--cContentBlockColumnScrollBorder);
+    border-right: var(--cContentBlockColumnScrollBorder);
+    box-shadow: var(--cBoxShadow) var(--cBoxShadowInset);
+}
+
+.ContentBlockColumnScroll_Horizontal {
+    padding: var(--cContentBlockColumnScrollPadding_Horizontal);
+    overflow-x: var(--cContentBlockColumnScrollOverflowX_Horizontal);
+    white-space: var(--cContentBlockColumnScrollWhiteSpace_Horizontal);
+}
+
+.ContentBlockColumnScrollTable {
+    display: var(--cContentBlockColumnScrollTableDisplay);
+    border-collapse: var(--cContentBlockColumnScrollTableBorderCollapse);
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+}
+
+.ContentBlockColumnScrollTable_Horizontal {
+    border-spacing: var(--cContentBlockColumnScrollTableBorderSpacing_Horizontal);
+}
+
+.ContentBlockColumnScrollTableCell {
+    transition-duration: var(--cTransitionDuration_Short);
+    display: var(--cContentBlockColumnScrollTableCellDisplay);
+    padding: var(--cContentBlockColumnScrollTableCellPadding);
+    height: var(--cContentBlockColumnScrollTableCellHeight);
+    max-width: var(--cContentBlockColumnScrollTableCellMaxWidth);
+    min-width: var(--cContentBlockColumnScrollTableCellMinWidth);
+    background-color: var(--cContentBlockColumnBackgroundColor);
+    border-radius: var(--cContentBorderRadius);
+    box-shadow: var(--cBoxShadow);
+    color: var(--cContentColor);
+}
+
+.ContentBlockColumnScrollTableCell:hover {
+    box-shadow: var(--cBoxShadow_Hover);
+}
+
+.ContentBlockColumnSpacer {
+    padding: var(--vContentBlockColumnSpacerPadding);
+}
+
+.ContentBlockColumnRowTable {
+    display: var(--cContentBlockColumnRowTableDisplay);
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+    vertical-align: var(--cContentBlockColumnRowTableVerticalAlign);
+    width: var(--cContentBlockColumnRowTableWidth);
+    color: var(--cContentColor);
+}
+
+.ContentBlockColumnRowTableCell {
+    display: var(--cContentBlockColumnRowTableCellDisplay);
+}

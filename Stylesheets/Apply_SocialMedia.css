@@ -1,0 +1,19 @@
+﻿.SocialMedia_Facebook {
+    color: var(--cSocialMediaColor_Facebook);
+}
+
+.SocialMedia_FacebookLike {
+    color: var(--cSocialMediaColor_FacebookLike);
+}
+
+.SocialMedia_GooglePlus {
+    color: var(--cSocialMediaColor_GooglePlus);
+}
+
+.SocialMedia_Twitter {
+    color: var(--cSocialMediaColor_Twitter);
+}
+
+.SocialMedia_YouTube {
+    color: var(--cSocialMediaColor_YouTube);
+}

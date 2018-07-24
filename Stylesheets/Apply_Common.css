@@ -1,0 +1,32 @@
+﻿a {
+    text-decoration: var(--cTextDecoration_Default);
+}
+
+body {
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+    overflow-x: var(--cOverflowX_Default);
+    background-color: var(--cBodyBackgroundColor);
+    font-family: var(--cFontFamily_Default);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    cursor: var(--cCursor_Default);
+}
+
+.Left {
+    float: var(--cLeftFloat);
+}
+
+.Link {
+    cursor: var(--cCursor_Link);
+}
+
+.Right {
+    float: var(--cRightFloat);
+}
+
+.Wrap {
+    overflow-wrap: var(--cWrapOverflowWrap);
+    white-space: var(--cWrapWhiteSpace);
+}

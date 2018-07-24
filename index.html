@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-gb" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <base href="" />
+    <title>[Title]</title>
+    <!-- Icons -->
+    <!--<link rel="icon" href="" />--> <!-- Chrome / Firefox / Opera : 48, 96, 144, 192 -->
+    <!--<link rel="apple-touch-icon" href="" />--> <!-- Safari : 76, 120, 152 -->
+    <meta name="msapplication-square310x310logo" content="" /> <!-- Edge / Internet Explorer : 70, 150, 310 -->
+    <!-- Stylesheets (Reference) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Stylesheets (Custom) -->
+    <link rel="stylesheet" href="Stylesheets/Constants.css" />
+    <link rel="stylesheet" media="screen and (max-width: 719px)" href="Stylesheets/VariablesM.css" />
+    <link rel="stylesheet" media="screen and (min-width: 720px) and (max-width: 1079px)" href="Stylesheets/VariablesDS.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1080px)" href="Stylesheets/VariablesDM.css" />
+    <link rel="stylesheet" href="Stylesheets/Apply_Common.css" />
+    <link rel="stylesheet" href="Stylesheets/Apply_Header.css" />
+    <link rel="stylesheet" href="Stylesheets/Apply_Content.css" />
+    <link rel="stylesheet" href="Stylesheets/Apply_Footer.css" />
+    <link rel="stylesheet" href="Stylesheets/Apply_Buttons.css" />
+    <link rel="stylesheet" href="Stylesheets/Apply_SocialMedia.css" />
+    <!-- Metadata -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4285F4"> <!-- Safari : [Color], [Color]-translucent -->
+    <meta name="author" content="[Author]" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="msapplication-navbutton-color" content="#4285F4"> <!-- Edge / Internet Explorer : [Color] -->
+    <meta name="theme-color" content="#4285F4"> <!-- Chrome / Firefox / Opera : [Color] -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Scripts (Custom) -->
+    <script defer type="text/javascript" src="Scripts/Header.js"></script>
+</head>
+<body id="Page">
+    <table class="Header">
+        <tr class="HeaderTitle">
+            <td class="HeaderTitleContent" rowspan="2">[Title]</td>
+        </tr>
+        <tr> <!-- class="HeaderNavigation" -->
+            <td class="HeaderNavigationContent">
+                <ul class="HeaderNavigationContentBlock" id="HeaderNavigationContentBlock">
+                    <li class="HeaderNavigationContentBlockItem">
+                        <a class="HeaderNavigationContentBlockItemLink" href="index.html">Home</a> <!-- target="" -->
+                    </li>
+                    <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockDropdown HeaderNavigationContentBlockItem_Hide">
+                        <p class="HeaderNavigationContentBlockDropdownButton" onclick="DropdownContent_Show('HeaderNavigationContentBlockDropdownButton', 'HeaderNavigationContentBlockDropdownContent1', 'HeaderNavigationContentBlockDropdownContent', 'HeaderNavigationContentBlockDropdownContent_Show', true)">[Dropdown1]...</p>
+                        <div class="HeaderNavigationContentBlockDropdownContent" id="HeaderNavigationContentBlockDropdownContent1">
+                            <a class="HeaderNavigationContentBlockDropdownContentLink">[Dropdown1Link1]<br /></a> <!-- href="" target="" -->
+                            <hr class="HeaderNavigationContentBlockDropdownContentSeparator" />
+                            <a class="HeaderNavigationContentBlockDropdownContentLink">[Dropdown1Link2]<br /></a> <!-- href="" target="" -->
+                            <a class="HeaderNavigationContentBlockDropdownContentLink">[Dropdown1Link3]<br /></a> <!-- href="" target="" -->
+                        </div>
+                    </li>
+                    <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockItem_Hide">
+                        <a class="HeaderNavigationContentBlockItemLink">[Link2]</a> <!-- href="" target="" -->
+                    </li>
+                    <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockItem_Hide">
+                        <a class="HeaderNavigationContentBlockItemLink">[Link3]</a> <!-- href="" target="" -->
+                    </li>
+                </ul>
+                <div class="HeaderNavigationContentButton" id="HeaderNavigationContentButton" onclick="ContentBlock_Toggle('HeaderNavigationContentBlock', 'HeaderNavigationContentButton', 'HeaderNavigationContentBlock', 'HeaderNavigationContentBlock_Show', 'HeaderNavigationContentButton', 'HeaderNavigationContentButton_Close')">
+                    <div class="HeaderNavigationContentButtonBar HeaderNavigationContentButtonBar1"></div>
+                    <div class="HeaderNavigationContentButtonBar HeaderNavigationContentButtonBar2"></div>
+                    <div class="HeaderNavigationContentButtonBar HeaderNavigationContentButtonBar3"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="Spacer"></div>
+    <ul class="Content">
+        <li class="ContentBlock ContentBlock_S100M100">
+            <div class="ContentBlockColumn">
+                <div class="ContentBlockColumnRow">
+                    <div class="ContentBlockColumnRowTable">
+                        <div class="ContentBlockColumnRowTableCell"><h2>[Heading]</h2></div>
+                        <a class="Button ButtonDefault Button_H2 Button_Link ContentBlockColumnRowTableCell Right">
+                            <!-- href="" target="" -->
+                            <span class="fas fa-chevron-circle-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ContentBlockColumnScroll ContentBlockColumnScroll_Horizontal">
+                    <div class="ContentBlockColumnScrollTable_Horizontal">
+                        <a class="ContentBlockColumnScrollTableCell Wrap">
+                            <!-- href="" target="" -->
+                            <h3 class="Link"><span style="color: green;" class="fas fa-leaf"> V</span> [Name]</h3>
+                            <p class="Content_Inactive"><span class="fas fa-info"></span> [Context]</p>
+                        </a>
+                        <a class="ContentBlockColumnScrollTableCell Wrap">
+                            <!-- href="" target="" -->
+                            <h3 class="Link"><span style="color: green;" class="fas fa-leaf"> Ve</span> [Name]</h3>
+                            <p class="Content_Inactive"><span class="fas fa-info"></span> [Context]</p>
+                        </a>
+                        <a class="ContentBlockColumnScrollTableCell Wrap">
+                            <!-- href="" target="" -->
+                            <h3 class="Link">[Name]</h3>
+                            <p class="Content_Inactive"><span class="fas fa-info"></span> [Context]</p>
+                        </a>
+                        <a class="ContentBlockColumnScrollTableCell Wrap">
+                            <!-- href="" target="" -->
+                            <h3 class="Link">[Name]</h3>
+                            <p class="Content_Inactive"><span class="fas fa-info"></span> [Context]</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="ContentBlockColumnSpacer"></div>
+            </div>
+        </li>
+        <li class="ContentBlock ContentBlock_S100M050">
+            <div class="ContentBlockColumn">
+                <div class="ContentBlockColumnRow">
+                    <div class="ContentBlockColumnRowTable">
+                        <div class="ContentBlockColumnRowTableCell"><h2>[Heading]</h2></div>
+                        <a class="Button ButtonDefault Button_H2 Button_Link ContentBlockColumnRowTableCell Right">
+                            <!-- href="" target="" -->
+                            <span class="fas fa-chevron-circle-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ContentBlockColumnRow ContentBlockColumnRow_Link">
+                    <a class="ContentBlockColumnRowTable">
+                        <!-- href="" target="" -->
+                        <h3 class="Link">[Subheading]</h3>
+                        <p class="Content_Inactive"><span class="fas fa-info"></span> [Context]</p>
+                    </a>
+                </div>
+                <div class="ContentBlockColumnRow ContentBlockColumnRow_Link">
+                    <a class="ContentBlockColumnRowTable">
+                        <!-- href="" target="" -->
+                        <h3 class="Link">[Subheading]</h3>
+                        <p class="Content_Inactive"><span class="fas fa-info"></span> [Context]</p>
+                    </a>
+                </div>
+                <div class="ContentBlockColumnRow ContentBlockColumnRow_Link">
+                    <a class="ContentBlockColumnRowTable">
+                        <!-- href="" target="" -->
+                        <h3 class="Link">[Subheading]</h3>
+                        <p class="Content_Inactive"><span class="fas fa-info"></span> [Context]</p>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="ContentBlock ContentBlock_S100M050">
+            <div class="ContentBlockColumn">
+                <div class="ContentBlockColumnRow"><h2>[Heading]</h2></div>
+                <div class="ContentBlockColumnRow"><p>[Text]</p></div>
+                <div class="ContentBlockColumnRow ContentBlockColumnRow_Link">
+                    <a class="ContentBlockColumnRowTable"> <!-- href="" target="" -->
+                        <h3 class="Link">[Subheading]</h3>
+                        <p>[Text]</p>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <table class="Footer">
+        <tr> <!-- class="FooterRow" -->
+            <td class="FooterRowCell">
+                <h2>Like.</h2>
+                <h2>
+                    <a class="Button Button_Link SocialMedia_FacebookLike" title="Like [Title] on Facebook">
+                        <!-- href="" target="_blank" -->
+                        <span class="fas fa-thumbs-up"></span>
+                    </a>
+                </h2>
+            </td>
+            <td class="FooterRowCell">
+                <h2>Share.</h2>
+                <h2>
+                    <a class="Button Button_Link SocialMedia_Facebook" title="Facebook">
+                        <!-- href="http://www.facebook.com/sharer.php?u=https://[Template]/index.html" target="_blank" -->
+                        <span class="fab fa-facebook"></span>
+                    </a>
+                    <a class="Button Button_Link SocialMedia_Twitter" title="Twitter">
+                        <!-- href="https://twitter.com/home?status=Currently%20reading%20https://[Template]/index.html" target="_blank" -->
+                        <span class="fab fa-twitter"></span>
+                    </a>
+                    <a class="Button Button_Link SocialMedia_GooglePlus" title="Google+">
+                        <!-- href="https://plus.google.com/share?url=https://[Template]/index.html" target="_blank" -->
+                        <span class="fab fa-google-plus"></span>
+                    </a>
+                </h2>
+            </td>
+            <td class="FooterRowCell">
+                <h2>Subscribe.</h2>
+                <h2>
+                    <a class="Button Button_Link SocialMedia_Email" title="email">
+                        <!-- href="" target="_blank" -->
+                        <span class="fas fa-inbox"></span>
+                    </a>
+                    <a class="Button Button_Link SocialMedia_YouTube" title="YouTube">
+                        <!-- href="" target="_blank" -->
+                        <span class="fab fa-youtube"></span>
+                    </a>
+                </h2>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
