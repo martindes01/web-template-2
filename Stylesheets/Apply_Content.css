@@ -50,6 +50,19 @@
     box-shadow: var(--vContentBlockColumnRowBoxShadow_Hover);
 }
 
+.ContentBlockColumnRowTable {
+    display: var(--cContentBlockColumnRowTableDisplay);
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+    vertical-align: var(--cContentBlockColumnRowTableVerticalAlign);
+    width: var(--cContentBlockColumnRowTableWidth);
+    color: var(--cContentColor);
+}
+
+.ContentBlockColumnRowTableCell {
+    display: var(--cContentBlockColumnRowTableCellDisplay);
+}
+
 .ContentBlockColumnScroll {
     position: var(--cContentBlockColumnScrollPosition);
     background-color: var(--cBodyBackgroundColor);
@@ -89,22 +102,9 @@
 }
 
 .ContentBlockColumnScrollTableCell:hover {
-    box-shadow: var(--cBoxShadow_Hover);
+    box-shadow: var(--vContentBlockColumnScrollTableCellBoxShadow_Hover);
 }
 
 .ContentBlockColumnSpacer {
     padding: var(--vContentBlockColumnSpacerPadding);
-}
-
-.ContentBlockColumnRowTable {
-    display: var(--cContentBlockColumnRowTableDisplay);
-    margin: var(--cMargin_Default);
-    padding: var(--cPadding_Default);
-    vertical-align: var(--cContentBlockColumnRowTableVerticalAlign);
-    width: var(--cContentBlockColumnRowTableWidth);
-    color: var(--cContentColor);
-}
-
-.ContentBlockColumnRowTableCell {
-    display: var(--cContentBlockColumnRowTableCellDisplay);
 }

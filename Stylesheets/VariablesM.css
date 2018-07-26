@@ -13,6 +13,8 @@
     --vContentBlockColumnRowBorderRadius_Hover: initial;
     --vContentBlockColumnRowBoxShadow_Hover: initial;
     --vContentBlockColumnRowPadding: 2px 5px 8px;
+    /* ContentBlockColumnScrollTableCell */
+    --vContentBlockColumnScrollTableCellBoxShadow_Hover: var(--cBoxShadow);
     /* ContentBlockColumnSpacer */
     --vContentBlockColumnSpacerPadding: 5px;
     /* FooterRowCell */

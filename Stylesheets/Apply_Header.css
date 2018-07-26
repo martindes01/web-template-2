@@ -49,7 +49,7 @@
 
 .HeaderNavigationContentBlockDropdownButton {
     transition-duration: var(--cTransitionDuration_Long);
-    cursor: var(--cCursor_Default);
+    cursor: var(--cCursor_Link);
     display: var(--cHeaderNavigationContentBlockDropdownButtonDisplay);
     margin: var(--cMargin_Default);
     padding: var(--vHeaderNavigationContentBlockDropdownButtonPadding);
