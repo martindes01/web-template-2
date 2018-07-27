@@ -1,0 +1,37 @@
+﻿.Button {
+    margin: var(--cMargin_Default);
+    padding: var(--cPadding_Default);
+    color: var(--cButtonColor);
+    text-decoration: var(--cTextDecoration_Default);
+}
+
+.Button_H1 {
+    height: var(--cButtonHeight_H1);
+    width: var(--cButtonWidth_H1);
+    font-size: var(--cButtonFontSize_H1);
+}
+
+.Button_H2 {
+    height: var(--cButtonHeight_H2);
+    width: var(--cButtonWidth_H2);
+    font-size: var(--cButtonFontSize_H2);
+}
+
+.Button_H3 {
+    height: var(--cButtonHeight_H3);
+    width: var(--cButtonWidth_H3);
+    font-size: var(--cButtonFontSize_H3);
+}
+
+.Button_Link {
+    cursor: var(--cButtonCursor_Link);
+}
+
+.ButtonDefault {
+    transition-duration: var(--cTransitionDuration_Short);
+    color: var(--cButtonDefaultColor);
+}
+
+.ButtonDefault:hover {
+    color: var(--vButtonDefaultColor_Hover);
+}

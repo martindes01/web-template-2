@@ -1,0 +1,16 @@
+﻿.Footer {
+    margin: var(--cMargin_Default);
+    padding: var(--cFooterPadding);
+    width: var(--cFooterWidth);
+    background-color: var(--cFooterBackgroundColor);
+    color: var(--cFooterColor);
+    text-align: var(--cFooterTextAlign);
+}
+
+.FooterRowCell {
+    display: var(--cFooterRowCellDisplay);
+    margin: var(--cMargin_Default);
+    padding: var(--vFooterRowCellPadding);
+    text-align: var(--cFooterTextAlign);
+    vertical-align: var(--cFooterRowCellVerticalAlign);
+}
