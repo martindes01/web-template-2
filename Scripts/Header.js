@@ -4,7 +4,6 @@
     var vDropdownButtonClassName;
     var vDropdownContentClassName1;
     var vDropdownContentClassName2;
-    var vTouchAvailable = false;
 
     // Toggle navigation menu
     ContentBlock_Toggle = function (ContentBlockId, ContentButtonId, ContentBlockClassName1, ContentBlockClassName2, ContentButtonClassName1, ContentButtonClassName2) {
@@ -51,20 +50,9 @@
     };
 
     // Close all dropdown menus on loss of mouse capture
-    DropdownContents_HideOnMouseLoss = function (event) {
+    window.onclick = function (event) {
         if (!event.target.matches('.' + vDropdownButtonClassName)) {
             DropdownContents_Hide(vDropdownContentClassName1, vDropdownContentClassName2);
         }
-    };
-
-    window.onclick = function (event) {
-        if (!vTouchAvailable) {
-            DropdownContents_HideOnMouseLoss(event);
-        }
-    };
-
-    window.ontouchstart = function (event) {
-        vTouchAvailable = true;
-        DropdownContents_HideOnMouseLoss(event);
     };
 })(window);
