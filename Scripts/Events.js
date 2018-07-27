@@ -1,7 +1,7 @@
 // Immediately-invoked function expression - Events
 (function () {
-    // Detect whether device runs iOS (note that userAgent string can be altered by user or browser)
-    if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+    // Detect whether device is iPad (note that userAgent string can be altered by user or browser)
+    if (/iPad/.test(navigator.userAgent)) {
         // Listen for touch events
         window.addEventListener("touchend", Events_Handler_Touch, true);
         window.addEventListener("touchmove", Events_Handler_Touch, true);
