@@ -32,7 +32,6 @@
     <meta name="theme-color" content="#4285F4"> <!-- Chrome / Firefox / Opera : [Color] -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Scripts (Custom) -->
-    <!--<script defer type="text/javascript" src="Scripts/Events.js"></script>-->
     <script defer type="text/javascript" src="Scripts/Header.js"></script>
 </head>
 <body id="Page">
@@ -47,7 +46,7 @@
                         <a class="HeaderNavigationContentBlockItemLink" href="index.html" target="">Home</a> <!-- target="" -->
                     </li>
                     <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockDropdown HeaderNavigationContentBlockItem_Hide">
-                        <p class="HeaderNavigationContentBlockDropdownButton" ontouchstart="gvTouch = true; DropdownContent_Show('HeaderNavigationContentBlockDropdownButton', 'HeaderNavigationContentBlockDropdownContent1', 'HeaderNavigationContentBlockDropdownContent', 'HeaderNavigationContentBlockDropdownContent_Show', true)" onclick="if (!gvTouch) DropdownContent_Show('HeaderNavigationContentBlockDropdownButton', 'HeaderNavigationContentBlockDropdownContent1', 'HeaderNavigationContentBlockDropdownContent', 'HeaderNavigationContentBlockDropdownContent_Show', true)">[Dropdown1]...</p>
+                        <p class="HeaderNavigationContentBlockDropdownButton" ontouchstart="gvTouch = true; DropdownContent_Show('HeaderNavigationContentBlockDropdownButton', 'HeaderNavigationContentBlockDropdownContent1', 'HeaderNavigationContentBlockDropdownContent', 'HeaderNavigationContentBlockDropdownContent_Show', true)" onclick="if (!gvTouch) { DropdownContent_Show('HeaderNavigationContentBlockDropdownButton', 'HeaderNavigationContentBlockDropdownContent1', 'HeaderNavigationContentBlockDropdownContent', 'HeaderNavigationContentBlockDropdownContent_Show', true); }">[Dropdown1]...</p>
                         <div class="HeaderNavigationContentBlockDropdownContent" id="HeaderNavigationContentBlockDropdownContent1">
                             <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Dropdown1Link1]<br /></a> <!-- href="" target="" -->
                             <hr class="HeaderNavigationContentBlockDropdownContentSeparator" />
