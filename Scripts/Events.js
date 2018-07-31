@@ -1,35 +1,77 @@
 // Immediately-invoked function expression - Events
 (function () {
+    // Private constants - Events
+    cTouchMove_ThresholdX = 10;
+    cTouchMove_ThresholdY = 10;
+
+    // Private variables - Events
+    vTouchMove = false;
+    vTouchStart_X = 0;
+    vTouchStart_Y = 0;
+
     // Detect whether device is iPad (note that userAgent string can be altered by user or browser)
     if (/iPad/.test(navigator.userAgent)) {
         // Listen for touch events
-        window.addEventListener("touchend", Events_Handler_Touch, true);
-        window.addEventListener("touchmove", Events_Handler_Touch, true);
-        window.addEventListener("touchstart", Events_Handler_Touch, true);
+        window.addEventListener("touchstart", Events_Touch_Handle, true);
+        window.addEventListener("touchmove", Events_Touch_Handle, true);
+        window.addEventListener("touchend", Events_Touch_Handle, true);
+        window.addEventListener("touchcancel", Events_Touch_Handle, true);
     }
 
-    // Cancel the touch event and dispatch relevant mouse event instead
-    function Events_Handler_Touch(event) {
-        var tMouseEventName;
+    // Dispatch specified event
+    function Events_Dispatch(Type, EventName, ScreenX, ScreenY, ClientX, ClientY) {
+        // Initialise event
+        var tEvent = document.createEvent(Type);
+        tEvent.initMouseEvent(EventName, true, true, window, 1, ScreenX, ScreenY, ClientX, ClientY, false, false, false, false, 0, null);
+        // Dispatch event
+        tTouch.target.dispatchEvent(tEvent);
+    }
+
+    // Synchronise touch events and dispatch replacement mouse events as necessary
+    function Events_Touch_Handle(event) {
         var tTouch = event.changedTouches[0];
-        // Select relevant mouse event
+        // Handle touch event
         switch (event.type) {
-            case "touchend":
-                tMouseEventName = "mouseup";
+            case "touchstart":
+                // Prevent default touchstart
+                event.preventDefault();
+                // Store location of event
+                vTouchStart_X = tTouch.clientX;
+                vTouchStart_Y = tTouch.clientY;
                 break;
             case "touchmove":
-                tMouseEventName = "mousemove";
+                // Dispatch touchstart before first in series of touchmoves
+                if (!vTouchMove) {
+                    // Check touchmove is larger than threshold
+                    if (Math.abs(tTouch.clientX - vTouchStart_X) > cTouchMove_ThresholdX || Math.abs(tTouch.clientY - vTouchStart_Y) > cTouchMove_ThresholdY) {
+                        // Dispatch touchstart
+                        Events_Dispatch("TouchEvent", "touchstart", tTouch.screenX, tTouch.screenY, tTouch.clientX, tTouch.clientY);
+                        vTouchMove = true;
+                    } else {
+                        // Prevent default touchmove
+                        event.preventDefault();
+                    }
+                }
                 break;
-            case "touchstart":
-                tMouseEventName = "mousedown";
+            case "touchend":
+                // Dispatch click instead of default touchend if no touchmove detected
+                if (!vTouchMove) {
+                    event.preventDefault();
+                    Events_Dispatch("MouseEvent", "click", tTouch.screenX, tTouch.screenY, tTouch.clientX, tTouch.clientY);
+                }
+                // Reset touch event variables
+                Events_Touch_Reset();
                 break;
-            default: return;
+            default:
+                // Reset touch event variables
+                Events_Touch_Reset();
+                return;
         }
-        // Initialise and dispatch mouse event
-        var tMouseEvent = document.createEvent("MouseEvent");
-        tMouseEvent.initMouseEvent(tMouseEventName, true, true, window, 1, tTouch.screenX, tTouch.screenY, tTouch.clientX, tTouch.clientY, false, false, false, false, 0, null);
-        tTouch.target.dispatchEvent(tMouseEvent);
-        // Cancel original touch event
-        event.preventDefault();
+    }
+
+    function Events_Touch_Reset() {
+        vTouchMove = false;
+        vTouchStart_X = 0;
+        vTouchStart_Y = 0;
     }
 })();
