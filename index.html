@@ -30,9 +30,10 @@
     <meta name="theme-color" content="#4285F4"> <!-- Chrome / Firefox / Opera : [Color] -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Scripts (Custom) -->
+    <script defer type="text/javascript" src="Scripts/Device.js"></script>
     <script defer type="text/javascript" src="Scripts/Header.js"></script>
 </head>
-<body id="Page">
+<body id="Page" data-device-mouse-classes="HeaderNavigationContentBlockDropdownButton" data-device-touch-classes="HeaderNavigationContentBlockItemLink" onload="Device_Touch_ReplaceClass()">
     <table class="Header">
         <tr class="HeaderTitle">
             <td class="HeaderTitleContent" rowspan="2">[Title]</td>
@@ -44,19 +45,19 @@
                         <a class="HeaderNavigationContentBlockItemLink" href="index.html" target="">Home</a> <!-- target="" -->
                     </li>
                     <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockDropdown HeaderNavigationContentBlockItem_Hide">
-                        <a class="HeaderNavigationContentBlockDropdownButton" href="" target="">[Dropdown1]...</a> <!-- href="" target="" -->
+                        <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link2]...</a> <!-- href="" target="" -->
                         <div class="HeaderNavigationContentBlockDropdownContent" id="HeaderNavigationContentBlockDropdownContent1">
-                            <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Dropdown1Link1]<br /></a> <!-- href="" target="" -->
+                            <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Link2DropdownLink1]<br /></a> <!-- href="" target="" -->
                             <hr class="HeaderNavigationContentBlockDropdownContentSeparator" />
-                            <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Dropdown1Link2]<br /></a> <!-- href="" target="" -->
-                            <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Dropdown1Link3]<br /></a> <!-- href="" target="" -->
+                            <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Link2DropdownLink2]<br /></a> <!-- href="" target="" -->
+                            <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Link2DropdownLink3]<br /></a> <!-- href="" target="" -->
                         </div>
                     </li>
                     <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockItem_Hide">
-                        <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link2]</a> <!-- href="" target="" -->
+                        <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link3]</a> <!-- href="" target="" -->
                     </li>
                     <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockItem_Hide">
-                        <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link3]</a> <!-- href="" target="" -->
+                        <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link4]</a> <!-- href="" target="" -->
                     </li>
                 </ul>
                 <div class="HeaderNavigationContentButton" id="HeaderNavigationContentButton" onclick="ContentBlock_Toggle('HeaderNavigationContentBlock', 'HeaderNavigationContentButton', 'HeaderNavigationContentBlock', 'HeaderNavigationContentBlock_Show', 'HeaderNavigationContentButton', 'HeaderNavigationContentButton_Close')">
