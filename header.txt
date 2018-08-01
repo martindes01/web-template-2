@@ -1,0 +1,32 @@
+<tr class="HeaderTitle">
+    <td class="HeaderTitleContent" rowspan="2">[Title]</td>
+</tr>
+<tr> <!-- class="HeaderNavigation" -->
+    <td class="HeaderNavigationContent">
+        <ul class="HeaderNavigationContentBlock" id="HeaderNavigationContentBlock">
+            <li class="HeaderNavigationContentBlockItem">
+                <a class="HeaderNavigationContentBlockItemLink" href="index.html" target="">Home</a> <!-- target="" -->
+            </li>
+            <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockDropdown HeaderNavigationContentBlockItem_Hide">
+                <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link2]</a> <!-- href="" target="" -->
+                <div class="HeaderNavigationContentBlockDropdownContent" id="HeaderNavigationContentBlockDropdownContent1">
+                    <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Link2DropdownLink1]<br /></a> <!-- href="" target="" -->
+                    <hr class="HeaderNavigationContentBlockDropdownContentSeparator" />
+                    <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Link2DropdownLink2]<br /></a> <!-- href="" target="" -->
+                    <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Link2DropdownLink3]<br /></a> <!-- href="" target="" -->
+                </div>
+            </li>
+            <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockItem_Hide">
+                <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link3]</a> <!-- href="" target="" -->
+            </li>
+            <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockItem_Hide">
+                <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link4]</a> <!-- href="" target="" -->
+            </li>
+        </ul>
+        <div class="HeaderNavigationContentButton" id="HeaderNavigationContentButton" onclick="ContentBlock_Toggle('HeaderNavigationContentBlock', 'HeaderNavigationContentButton', 'HeaderNavigationContentBlock', 'HeaderNavigationContentBlock_Show', 'HeaderNavigationContentButton', 'HeaderNavigationContentButton_Close')">
+            <div class="HeaderNavigationContentButtonBar HeaderNavigationContentButtonBar1"></div>
+            <div class="HeaderNavigationContentButtonBar HeaderNavigationContentButtonBar2"></div>
+            <div class="HeaderNavigationContentButtonBar HeaderNavigationContentButtonBar3"></div>
+        </div>
+    </td>
+</tr>
