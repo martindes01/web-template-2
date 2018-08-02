@@ -56,6 +56,48 @@
                 </div>
             </div>
         </li>
+
+        <li class="ContentBlock ContentBlock_S100M100">
+            <div class="ContentBlockColumn">
+                <div class="ContentBlockColumnRow">
+                    <h2>How it works</h2>
+
+                    <p>
+                        <a href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">This page</a> uses an HTML data attribute to specify the paths to <a href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">header.txt</a> and <a href="https://github.com/martindes01/web-template-2/blob/main/footer.txt" target="_blank">footer.txt</a>.
+                        These files contain the HTML markup for the header and footer of this page.
+                    </p>
+
+                    <pre><code>&lt;body data-ajax-text-files="header.txt footer.txt">&lt;/body></code></pre>
+
+                    <p>
+                        Placeholder elements are given data attributes to specify the inclusion points for these files.
+                    </p>
+
+                    <pre><code>&lt;body data-ajax-text-files="header.txt footer.txt">
+    &lt;table data-ajax-text-file="header.txt">&lt;/table>
+    ...
+    &lt;table data-ajax-text-file="footer.txt">&lt;/table>
+&lt;/body></code></pre>
+
+                    <p>
+                        An asynchronous JavaScript (AJAX) function is called to load these files dynamically, append their contents to the inner HTML of their respective placeholder elements and execute the specified callback function.
+                    </p>
+
+                    <pre><code>&lt;body data-ajax-text-files="header.txt footer.txt"
+      onload="Ajax_Document_StartText(function () {
+          /* callback function */
+      });">
+    &lt;table data-ajax-text-file="header.txt">&lt;/table>
+    ...
+    &lt;table data-ajax-text-file="footer.txt">&lt;/table>
+&lt;/body></code></pre>
+
+                    <p>
+                        This framework can also be used to retrieve tags from XML files.
+                    </p>
+                </div>
+            </div>
+        </li>
     </ul>
 
     <table class="Footer" data-ajax-text-file="footer.txt"></table>
