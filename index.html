@@ -62,7 +62,7 @@
                         Find out more <a href="https://github.com/martindes01/web-template-2" target="_blank">here</a>.
                     </p>
 
-                    <h2>How it works</h2>
+                    <h2>How does it work?</h2>
 
                     <p>
                         The <code>body</code> element of <a href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">this page</a> has been given an HTML data attribute named <code>data-ajax-text-files</code> that specifies the space-delimited paths to <a href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">header.txt</a> and <a href="https://github.com/martindes01/web-template-2/blob/main/footer.txt" target="_blank">footer.txt</a>.
@@ -73,7 +73,7 @@
                     <pre><code data-language="html">&lt;body data-ajax-text-files="header.txt footer.txt">&lt;/body></code></pre>
 
                     <p>
-                        Suitable container elements are each given a data attribute named <code>data-ajax-text-file</code> that specifies one of the paths supplied to the <code>data-ajax-text-files</code> attribute.
+                        Suitable container elements have each been given a data attribute named <code>data-ajax-text-file</code> that specifies the path to one of the files.
                         This indicates that the content of the file at the specified path should be appended to the inner HTML of the container element.
                         In this case, the header and footer are inserted into <code>table</code> elements at the top and bottom of the page, respectively.
                     </p>
@@ -85,19 +85,19 @@
 &lt;/body></code></pre>
 
                     <p>
-                        When appropriate, the asynchronous function <code>Ajax_Document_StartText()</code> is called with a callback function as its only argument.
-                        The asynchronous function
+                        When appropriate, the asynchronous function <code>Ajax_Document_StartText(&lt;callback>)</code> is called.
+                        This function
                     </p>
 
                     <ol>
                         <li>
-                            loads the files dynamically,
+                            loads the files specified by <code>data-ajax-text-files</code> dynamically,
                         </li>
                         <li>
-                            appends their contents to the inner HTML of their container elements, and
+                            appends the contents of each file to the inner HTML of all container elements with a corresponding <code>data-ajax-text-file</code> attribute, and
                         </li>
                         <li>
-                            executes the specified callback function.
+                            executes the given callback function.
                         </li>
                     </ol>
 
@@ -116,6 +116,7 @@
 
                     <p>
                         This framework can also be used to retrieve tags from XML files using the analogous <code>data-ajax-xml-files</code>, <code>data-ajax-xml-file</code> and <code>data-ajax-xml-tag</code> attributes, and the asynchronous <code>Ajax_Document_StartXml()</code> function.
+                        Find out more <a href="https://github.com/martindes01/web-template-2" target="_blank">here</a>.
                     </p>
                 </div>
             </div>
