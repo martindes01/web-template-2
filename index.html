@@ -34,6 +34,8 @@
     <script defer type="text/javascript" src="Scripts/Device.js"></script>
     <script defer type="text/javascript" src="Scripts/Dom.js"></script>
     <script defer type="text/javascript" src="Scripts/Header.js"></script>
+
+    <script defer type="text/javascript" src="Scripts/rainbow-custom.min.js"></script>
 </head>
 
 <body data-ajax-text-files="header.txt footer.txt" data-ajax-xml-files="" data-device-mouse-classes="HeaderNavigationContentBlockDropdownButton" data-device-touch-classes="HeaderNavigationContentBlockItemLink" onload="Ajax_Document_StartText(Device_Touch_ReplaceClass);">
@@ -67,13 +69,13 @@
                         These files contain the HTML markup for the header and footer of this page.
                     </p>
 
-                    <pre><code>&lt;body data-ajax-text-files="header.txt footer.txt">&lt;/body></code></pre>
+                    <pre><code data-language="html">&lt;body data-ajax-text-files="header.txt footer.txt">&lt;/body></code></pre>
 
                     <p>
                         Placeholder elements are given data attributes to specify the inclusion points for these files.
                     </p>
 
-                    <pre><code>&lt;body data-ajax-text-files="header.txt footer.txt">
+                    <pre><code data-language="html">&lt;body data-ajax-text-files="header.txt footer.txt">
     &lt;table data-ajax-text-file="header.txt">&lt;/table>
     ...
     &lt;table data-ajax-text-file="footer.txt">&lt;/table>
@@ -83,7 +85,7 @@
                         An asynchronous JavaScript (AJAX) function is called to load these files dynamically, append their contents to the inner HTML of their respective placeholder elements and execute the specified callback function.
                     </p>
 
-                    <pre><code>&lt;body data-ajax-text-files="header.txt footer.txt"
+                    <pre><code data-language="html">&lt;body data-ajax-text-files="header.txt footer.txt"
       onload="Ajax_Document_StartText(function () {
           /* callback function */
       });">
