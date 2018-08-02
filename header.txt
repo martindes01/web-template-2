@@ -5,7 +5,7 @@
     <td class="HeaderNavigationContent">
         <ul class="HeaderNavigationContentBlock" id="HeaderNavigationContentBlock">
             <li class="HeaderNavigationContentBlockItem">
-                <a class="HeaderNavigationContentBlockItemLink" href="https://github.com/martindes01/web-template-2" target="_blank">Github repository</a>
+                <a class="HeaderNavigationContentBlockItemLink" href="https://github.com/martindes01/web-template-2" target="_blank">GitHub repository</a>
             </li>
             <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockItem_Hide">
                 <a class="HeaderNavigationContentBlockItemLink" href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">header.txt</a>
