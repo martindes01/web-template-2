@@ -1,26 +1,17 @@
 <tr class="HeaderTitle">
-    <td class="HeaderTitleContent" rowspan="2">[Title]</td>
+    <td class="HeaderTitleContent" rowspan="2">web&#8209;template&#8209;2</td>
 </tr>
-<tr> <!-- class="HeaderNavigation" -->
+<tr>
     <td class="HeaderNavigationContent">
         <ul class="HeaderNavigationContentBlock" id="HeaderNavigationContentBlock">
             <li class="HeaderNavigationContentBlockItem">
-                <a class="HeaderNavigationContentBlockItemLink" href="index.html" target="">Home</a> <!-- target="" -->
-            </li>
-            <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockDropdown HeaderNavigationContentBlockItem_Hide">
-                <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link2]</a> <!-- href="" target="" -->
-                <div class="HeaderNavigationContentBlockDropdownContent" id="HeaderNavigationContentBlockDropdownContent1">
-                    <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Link2DropdownLink1]<br /></a> <!-- href="" target="" -->
-                    <hr class="HeaderNavigationContentBlockDropdownContentSeparator" />
-                    <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Link2DropdownLink2]<br /></a> <!-- href="" target="" -->
-                    <a class="HeaderNavigationContentBlockDropdownContentLink" href="" target="">[Link2DropdownLink3]<br /></a> <!-- href="" target="" -->
-                </div>
+                <a class="HeaderNavigationContentBlockItemLink" href="https://github.com/martindes01/web-template-2" target="_blank">Github repository</a>
             </li>
             <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockItem_Hide">
-                <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link3]</a> <!-- href="" target="" -->
+                <a class="HeaderNavigationContentBlockItemLink" href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">header.txt</a>
             </li>
             <li class="HeaderNavigationContentBlockItem HeaderNavigationContentBlockItem_Hide">
-                <a class="HeaderNavigationContentBlockItemLink" href="" target="">[Link4]</a> <!-- href="" target="" -->
+                <a class="HeaderNavigationContentBlockItemLink" href="https://github.com/martindes01/web-template-2/blob/main/footer.txt" target="_blank">footer.txt</a>
             </li>
         </ul>
         <div class="HeaderNavigationContentButton" id="HeaderNavigationContentButton" onclick="ContentBlock_Toggle('HeaderNavigationContentBlock', 'HeaderNavigationContentButton', 'HeaderNavigationContentBlock', 'HeaderNavigationContentBlock_Show', 'HeaderNavigationContentButton', 'HeaderNavigationContentButton_Close')">
