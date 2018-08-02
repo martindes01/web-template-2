@@ -55,32 +55,27 @@
         <li class="ContentBlock ContentBlock_S100M100">
             <div class="ContentBlockColumn">
                 <div class="ContentBlockColumnRow">
-                    <div class="ContentBlockColumnRowTable">
-                        <div class="ContentBlockColumnRowTableCell">
-                            <h2>web-template-2</h2>
+                    <h1>web-template-2</h1>
 
-                            The header and footer of this page are loaded dynamically using AJAX.
-                            Find out more <a href="https://github.com/martindes01/web-template-2" target="_blank">here</a>.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
+                    <p>
+                        The header and footer of this page are loaded dynamically using Ajax.
+                        Find out more <a href="https://github.com/martindes01/web-template-2" target="_blank">here</a>.
+                    </p>
 
-        <li class="ContentBlock ContentBlock_S100M100">
-            <div class="ContentBlockColumn">
-                <div class="ContentBlockColumnRow">
                     <h2>How it works</h2>
 
                     <p>
-                        <a href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">This page</a> uses an HTML data attribute to specify the paths to <a href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">header.txt</a> and <a href="https://github.com/martindes01/web-template-2/blob/main/footer.txt" target="_blank">footer.txt</a>.
+                        The <code>body</code> element of <a href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">this page</a> has been given an HTML data attribute named <code>data-ajax-text-files</code> that specifies the space-delimited paths to <a href="https://github.com/martindes01/web-template-2/blob/main/header.txt" target="_blank">header.txt</a> and <a href="https://github.com/martindes01/web-template-2/blob/main/footer.txt" target="_blank">footer.txt</a>.
                         These files contain the HTML markup for the header and footer of this page.
+                        The <code>data-ajax-text-files</code> attribute <em>must</em> be placed on the <code>body</code> element.
                     </p>
 
                     <pre><code data-language="html">&lt;body data-ajax-text-files="header.txt footer.txt">&lt;/body></code></pre>
 
                     <p>
-                        Placeholder elements are given data attributes to specify the inclusion points for these files.
+                        Suitable container elements are each given a data attribute named <code>data-ajax-text-file</code> that specifies one of the paths supplied to the <code>data-ajax-text-files</code> attribute.
+                        This indicates that the content of the file at the specified path should be appended to the inner HTML of the container element.
+                        In this case, the header and footer are inserted into <code>table</code> elements at the top and bottom of the page, respectively.
                     </p>
 
                     <pre><code data-language="html">&lt;body data-ajax-text-files="header.txt footer.txt">
@@ -90,12 +85,29 @@
 &lt;/body></code></pre>
 
                     <p>
-                        An asynchronous JavaScript (AJAX) function is called to load these files dynamically, append their contents to the inner HTML of their respective placeholder elements and execute the specified callback function.
+                        When appropriate, the asynchronous function <code>Ajax_Document_StartText()</code> is called with a callback function as its only argument.
+                        The asynchronous function
+                    </p>
+
+                    <ol>
+                        <li>
+                            loads the files dynamically,
+                        </li>
+                        <li>
+                            appends their contents to the inner HTML of their container elements, and
+                        </li>
+                        <li>
+                            executes the specified callback function.
+                        </li>
+                    </ol>
+
+                    <p>
+                        In this case, the function is called via the <code>window.onload</code> global event handler, and the callback function prints a simple message to the console.
                     </p>
 
                     <pre><code data-language="html">&lt;body data-ajax-text-files="header.txt footer.txt"
       onload="Ajax_Document_StartText(function () {
-          /* callback function */
+          console.log('Hello, World!');
       });">
     &lt;table data-ajax-text-file="header.txt">&lt;/table>
     ...
@@ -103,7 +115,7 @@
 &lt;/body></code></pre>
 
                     <p>
-                        This framework can also be used to retrieve tags from XML files.
+                        This framework can also be used to retrieve tags from XML files using the analogous <code>data-ajax-xml-files</code>, <code>data-ajax-xml-file</code> and <code>data-ajax-xml-tag</code> attributes, and the asynchronous <code>Ajax_Document_StartXml()</code> function.
                     </p>
                 </div>
             </div>
